@@ -22,7 +22,7 @@ Sample Output
 
 
 #include <bits/stdc++.h>
-#include<iomanip>
+
 using namespace std;
 
 string ltrim(const string &);
