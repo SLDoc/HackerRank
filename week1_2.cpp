@@ -11,7 +11,6 @@ The function prints
 
 
 */
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -27,8 +26,21 @@ vector<string> split(const string &);
  */
 
 void miniMaxSum(vector<int> arr) {
- sort(arr.begin(),arr.end());
-  cout<<arr[0]+arr[1]+arr[2]+arr[3]<<" "<<arr[4]+arr[3]+arr[2]+arr[1];
+     
+     int64_t min = 0, max=0;
+  
+     sort(arr.begin(),arr.end());
+     
+     for(int i=0;i<4;i++){
+         min+=arr[i];
+      }
+      
+      for(int i=arr.size()-1;i>arr.size()-5;i--){
+            max+=arr[i];
+         
+       }
+  
+    cout<<min<<" "<<max;
 }
 
 int main()
